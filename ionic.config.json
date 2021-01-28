@@ -1,0 +1,7 @@
+{
+  "name": "ArcGIS-JS-App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
