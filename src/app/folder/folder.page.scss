@@ -26,3 +26,12 @@ ion-menu-button {
 #container a {
   text-decoration: none;
 }
+
+.ion-color-bar {
+  --ion-color-base: var(--ion-color-bar);
+  --ion-color-base-rgb: var(--ion-color-bar-rgb);
+  --ion-color-contrast: var(--ion-color-bar-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-bar-contrast-rgb);
+  --ion-color-shade: var(--ion-color-bar-shade);
+  --ion-color-tint: var(--ion-color-bar-tint);
+}
