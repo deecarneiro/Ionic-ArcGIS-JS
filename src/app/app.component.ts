@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import {appPages, labels} from '../assets/content/index';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -11,25 +11,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
-  public appPages = [
-    {
-      title: 'Overview',
-      url: '/folder/Overview',
-      icon: 'globe'
-    },
-    {
-      title: 'Sample Code',
-      url: '/folder/SampleCode',
-      icon: 'Code'
-    },
-    {
-      title: 'API Reference',
-      url: '/folder/API',
-      icon: 'newspaper'
-    }
-  ];
+  public appPages = appPages;
 
-  public labels = ['Map','MapView','SceneView','Popup','PopupTemplate','WebScene','WebMap'];
+  public labels = labels;
 
   constructor(
     private platform: Platform,
@@ -50,6 +34,7 @@ export class AppComponent implements OnInit {
     const path = window.location.pathname.split('folder/')[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
+
     }
   }
 }
