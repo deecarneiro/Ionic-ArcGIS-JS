@@ -22,7 +22,7 @@ Project for demostrate features from ArcGIS.js, and show how to integrate with A
 
 - [Node.js](https://nodejs.org/en/)
 
-### 2. Instaling
+### 2. Installing
 
 2.1. Open terminal on the project folder and run this command bellow.
 
